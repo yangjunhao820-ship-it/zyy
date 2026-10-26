@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="IVE 中文介绍网页：六位成员、代表歌曲、舞台与组合发展时间线。">
+<title>IVE · Dive Into IVE</title>
+<style>
+:root{--bg:#0b0a12;--panel:#151320;--text:#f7f3ff;--muted:#b9b2c9;--pink:#ffb8d2;--lav:#c8baff;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#32203e 0,transparent 36%),radial-gradient(ellipse at 95% 18%,#24264b 0,transparent 30%),var(--bg);color:var(--text);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}a:hover{color:var(--pink)}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:rgba(11,10,18,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:68px}.brand{font-weight:900;letter-spacing:.22em;font-size:1.12rem}.brand span{color:var(--pink)}.navlinks{display:flex;gap:22px;flex-wrap:wrap;font-size:.9rem;color:var(--muted)}
+.hero{min-height:540px;display:grid;align-items:center;padding:70px 0 56px}.eyebrow{color:var(--pink);letter-spacing:.25em;font-size:.78rem;font-weight:800}.hero h1{font-size:clamp(3.5rem,10vw,7.5rem);line-height:.95;letter-spacing:-.07em;margin:20px 0}.hero h1 span{background:linear-gradient(100deg,#fff 15%,#ffc1db 52%,#bdb5ff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;color:var(--muted);font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 18px;border:1px solid var(--line);border-radius:999px;display:inline-block;font-weight:700;font-size:.9rem}.btn.primary{background:linear-gradient(110deg,#ffbad5,#c9bfff);color:#1a1320;border:0}.hero-note{margin-top:42px;display:flex;gap:24px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}.hero-note strong{color:white;font-size:1.2rem;display:block}
+section{padding:52px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}.kicker{font-size:.75rem;letter-spacing:.2em;color:var(--pink);font-weight:800}.section-head h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:7px 0 0}.section-head p{max-width:460px;color:var(--muted);margin:0;font-size:.93rem}
+.member-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.member{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,border-color .25s}.member:hover{transform:translateY(-5px);border-color:rgba(255,184,210,.5)}.portrait{height:190px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#42304b,#1e2342)}.portrait:before,.portrait:after{content:"";position:absolute;border-radius:50%;filter:blur(1px)}.portrait:before{width:210px;height:210px;background:rgba(255,190,220,.18);left:-40px;top:-90px}.portrait:after{width:150px;height:150px;background:rgba(191,184,255,.2);right:-25px;bottom:-70px}.initial{position:relative;z-index:1;font-size:4rem;font-weight:900;letter-spacing:-.08em;color:rgba(255,255,255,.93);text-shadow:0 8px 35px rgba(0,0,0,.2)}.member:nth-child(2) .portrait{background:linear-gradient(135deg,#55414c,#242239)}.member:nth-child(3) .portrait{background:linear-gradient(135deg,#3a5360,#29203e)}.member:nth-child(4) .portrait{background:linear-gradient(135deg,#65405c,#2b2448)}.member:nth-child(5) .portrait{background:linear-gradient(135deg,#68514b,#2c2849)}.member:nth-child(6) .portrait{background:linear-gradient(135deg,#4b4d73,#31213c)}.member-body{padding:20px}.member-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}.member h3{font-size:1.35rem;margin:0}.roman{color:var(--pink);font-size:.83rem;font-weight:800;letter-spacing:.12em}.tag{display:inline-block;color:#d9d2e8;background:rgba(255,255,255,.07);border:1px solid var(--line);border-radius:999px;padding:3px 9px;font-size:.75rem;margin:10px 4px 8px 0}.member p{color:var(--muted);font-size:.9rem;margin:8px 0 14px}.mini-link{font-size:.85rem;color:var(--pink);font-weight:700}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.info-card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:25px}.info-card h3{margin:0 0 10px;font-size:1.2rem}.info-card p,.info-card li{color:var(--muted);font-size:.95rem}.info-card ul{padding-left:20px;margin-bottom:0}.song-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.song{padding:20px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.045)}.song .num{font-size:.78rem;color:var(--pink);letter-spacing:.12em}.song h3{font-size:1.22rem;margin:8px 0 2px}.song p{margin:0 0 15px;color:var(--muted);font-size:.88rem}.song a{font-size:.85rem;color:var(--pink);font-weight:700}
+.timeline{border-left:1px solid rgba(255,184,210,.45);margin-left:10px;padding-left:25px}.event{position:relative;margin:0 0 25px}.event:before{content:"";position:absolute;left:-31px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 5px rgba(255,184,210,.1)}.event time{font-size:.78rem;color:var(--pink);font-weight:800;letter-spacing:.1em}.event h3{margin:3px 0;font-size:1.05rem}.event p{margin:0;color:var(--muted);font-size:.92rem}
+.links-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.official{border:1px solid var(--line);border-radius:16px;padding:17px;background:rgba(255,255,255,.04)}.official strong{display:block;margin-bottom:5px}.official span{font-size:.82rem;color:var(--muted)}
+footer{padding:34px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:800px){.member-grid,.song-grid{grid-template-columns:repeat(2,1fr)}.links-grid{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.hero{min-height:480px}.navlinks{gap:12px}}
+@media(max-width:520px){.member-grid,.song-grid,.about-grid{grid-template-columns:1fr}.navin{align-items:flex-start;flex-direction:column;padding:14px 0}.navlinks{font-size:.82rem}.portrait{height:165px}.hero{padding-top:55px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin"><a class="brand" href="#top">IVE<span>✦</span></a><nav class="navlinks" aria-label="页面导航"><a href="#members">成员</a><a href="#about">组合介绍</a><a href="#music">代表歌曲</a><a href="#timeline">发展时间线</a><a href="#official">官方链接</a></nav></div></header>
+<main id="top">
+<div class="wrap hero">
+<div>
+<div class="eyebrow">DIVE INTO IVE · 中文粉丝指南</div>
+<h1><span>IVE</span><br>I've IVE.</h1>
+<p>六种个性，一种自信。这里是 IVE 中文介绍页：从成员认识、音乐入门到代表舞台与发展历程，带你一步步走进这个韩国六人女团的音乐世界。</p>
+<div class="actions"><a class="btn primary" href="#members">认识六位成员 ↓</a><a class="btn" href="https://www.youtube.com/@IVEstarship" target="_blank" rel="noopener">打开官方 YouTube ↗</a></div>
+<div class="hero-note"><div><strong>6</strong>位成员</div><div><strong>2021.12.01</strong>正式出道</div><div><strong>DIVE</strong>官方粉丝名</div></div>
+</div>
+</div>
+
+<section id="members"><div class="wrap">
+<div class="section-head"><div><div class="kicker">MEET THE MEMBERS</div><h2>认识 IVE 的六位成员</h2></div><p>以下生日与基本定位参考 IVE 日本官方网站的公开资料。卡片采用文字视觉设计，不代表成员官方宣传照。</p></div>
+<div class="member-grid">
+<article class="member"><div class="portrait"><div class="initial">YJ</div></div><div class="member-body"><div class="member-top"><h3>安兪真</h3><span class="roman">YUJIN</span></div><span class="tag">队长</span><span class="tag">主唱方向</span><p>生日：2003 年 9 月 1 日。作为队长，她在舞台上的稳定表现与综艺中的活力感都很有辨识度。</p><a class="mini-link" href="https://www.instagram.com/_yujin_an/" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="member"><div class="portrait"><div class="initial">GA</div></div><div class="member-body"><div class="member-top"><h3>秋天</h3><span class="roman">GAEUL</span></div><span class="tag">Rapper</span><span class="tag">大姐</span><p>生日：2002 年 9 月 24 日。IVE 年龄最大的成员，舞台气质利落，Rap 段落和舞蹈表现很有个人特色。</p><a class="mini-link" href="https://www.instagram.com/IVEstarship/" target="_blank" rel="noopener">关注官方成员动态 ↗</a></div></article>
+<article class="member"><div class="portrait"><div class="initial">REI</div></div><div class="member-body"><div class="member-top"><h3>怜</h3><span class="roman">REI</span></div><span class="tag">Rap</span><span class="tag">Vocal</span><p>生日：2004 年 2 月 3 日。来自日本，以独特的音色、俏皮的表达方式和鲜明的个人风格受到关注。</p><a class="mini-link" href="https://www.instagram.com/reinyourheart/" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="member"><div class="portrait"><div class="initial">WY</div></div><div class="member-body"><div class="member-top"><h3>张元英</h3><span class="roman">WONYOUNG</span></div><span class="tag">Vocal</span><span class="tag">代表性成员</span><p>生日：2004 年 8 月 31 日。以舞台表现力、时尚表现和标志性的自信表达受到广泛关注。</p><a class="mini-link" href="https://www.instagram.com/for_everyoung10/" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="member"><div class="portrait"><div class="initial">LIZ</div></div><div class="member-body"><div class="member-top"><h3>Liz（丽兹）</h3><span class="roman">LIZ</span></div><span class="tag">Vocal</span><span class="tag">主唱方向</span><p>生日：2004 年 11 月 21 日。本名金志垣（Kim Ji-won），以清亮、富有穿透力的歌声成为团体音色的重要部分。</p><a class="mini-link" href="https://www.instagram.com/liz.yeyo/" target="_blank" rel="noopener">Instagram ↗</a></div></article>
+<article class="member"><div class="portrait"><div class="initial">LS</div></div><div class="member-body"><div class="member-top"><h3>李瑞</h3><span class="roman">LEESEO</span></div><span class="tag">忙内</span><span class="tag">Vocal</span><p>生日：2007 年 2 月 21 日。作为团队忙内，舞台上充满朝气，成长过程也是粉丝关注的一部分。</p><a class="mini-link" href="https://www.instagram.com/IVEstarship/" target="_blank" rel="noopener">查看成员动态 ↗</a></div></article>
+</div>
+<p style="color:var(--muted);font-size:.8rem;margin-top:16px">注：成员个人社交账号及中文译名可能变化；建议优先通过官方主页确认。个别链接若无法打开，请从官方账号入口进入。</p>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="section-head"><div><div class="kicker">ABOUT IVE</div><h2>组合简介</h2></div><p>IVE 由 STARSHIP Entertainment 推出，团名来自 “I HAVE”，表达将自己所拥有的魅力与能力自信展现出来的理念。</p></div>
+<div class="about-grid"><div class="info-card"><h3>她们是谁？</h3><p>IVE（아이브）是韩国六人女子组合，于 2021 年 12 月 1 日以单曲专辑《ELEVEN》出道。成员包括 Yujin、Gaeul、Rei、Wonyoung、Liz 与 Leeseo，其中 Rei 来自日本。</p></div><div class="info-card"><h3>IVE 的风格关键词</h3><ul><li>自信、鲜明的个人魅力与整体感</li><li>抓耳的副歌、精致编曲与强记忆点舞蹈</li><li>从梦幻优雅到强势时髦的多元概念</li><li>粉丝名：DIVE，常见应援口号为 “DIVE into IVE!”</li></ul></div></div>
+</div></section>
+
+<section id="music"><div class="wrap"><div class="section-head"><div><div class="kicker">START WITH THE MUSIC</div><h2>代表歌曲入门</h2></div><p>如果你刚开始听 IVE，可以先从这些知名主打曲入门。点击歌曲可跳转 YouTube 搜索结果，方便选择官方 MV 或舞台视频。</p></div>
+<div class="song-grid">
+<article class="song"><div class="num">01 / DEBUT</div><h3>ELEVEN</h3><p>2021 · 出道曲。神秘、轻盈又有节奏变化的编曲，展现团体初期的梦幻感。</p><a href="https://www.youtube.com/results?search_query=IVE+ELEVEN+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+<article class="song"><div class="num">02 / SIGNATURE</div><h3>LOVE DIVE</h3><p>2022 · 代表性作品之一，以标志性副歌和优雅神秘的概念广受讨论。</p><a href="https://www.youtube.com/results?search_query=IVE+LOVE+DIVE+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+<article class="song"><div class="num">03 / HIT</div><h3>After LIKE</h3><p>2022 · 充满明亮能量的流行舞曲，旋律直接、舞台氛围热烈。</p><a href="https://www.youtube.com/results?search_query=IVE+After+LIKE+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+<article class="song"><div class="num">04 / BOLD</div><h3>I AM</h3><p>2023 · 强调自我肯定与向前飞翔的主题，常被粉丝当作热血舞台入门曲。</p><a href="https://www.youtube.com/results?search_query=IVE+I+AM+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+<article class="song"><div class="num">05 / PLAYFUL</div><h3>Kitsch</h3><p>2023 · 节奏感鲜明，呈现更俏皮、个性化的一面。</p><a href="https://www.youtube.com/results?search_query=IVE+Kitsch+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+<article class="song"><div class="num">06 / NEW CHAPTER</div><h3>HEYA</h3><p>2024 · 将韩国传统意象融入流行视觉与编舞，概念辨识度鲜明。</p><a href="https://www.youtube.com/results?search_query=IVE+HEYA+Official+MV" target="_blank" rel="noopener">观看 MV / 舞台 ↗</a></article>
+</div></div></section>
+
+<section id="timeline"><div class="wrap"><div class="section-head"><div><div class="kicker">MILESTONES</div><h2>发展时间线与重要舞台</h2></div><p>以下列出可作为入门线索的代表性节点；活动阵容、舞台版本和日期请以主办方及官方频道发布为准。</p></div>
+<div class="timeline">
+<div class="event"><time>2021.12.01</time><h3>以《ELEVEN》正式出道</h3><p>IVE 开始以六人组合活动，出道曲为团体建立了清晰的音乐与视觉风格。</p></div>
+<div class="event"><time>2022</time><h3>《LOVE DIVE》与《After LIKE》扩大知名度</h3><p>两首作品成为组合发展过程中的关键热门歌曲，并在年末颁奖季获得重要关注。</p></div>
+<div class="event"><time>2022–2023</time><h3>年末颁奖礼与奖项认可</h3><p>IVE 在 Melon Music Awards、MAMA Awards、Asia Artist Awards 等颁奖礼获得新人奖及其他重要奖项；具体奖项请以各届官方获奖名单为准。</p></div>
+<div class="event"><time>2023</time><h3>《I AM》《Kitsch》时期</h3><p>音乐与舞台概念进一步拓展，团体的现场表演、造型与编舞成为粉丝讨论重点。</p></div>
+<div class="event"><time>2024</time><h3>《HEYA》《Accendio》与海外音乐节舞台</h3><p>持续推出新作品，并参与国际演出与音乐节活动。建议在官方频道搜索完整现场视频。</p></div>
+<div class="event"><time>持续进行</time><h3>巡演、专辑与全球粉丝活动</h3><p>巡演安排和最新作品会持续更新，出行与购票信息请只参考官方公告及正规售票平台。</p></div>
+</div></div></section>
+
+<section id="official"><div class="wrap"><div class="section-head"><div><div class="kicker">OFFICIAL LINKS</div><h2>官方入口</h2></div><p>通过官方渠道获取 MV、舞台、专辑资讯与活动公告，避免误信未经证实的演出消息。</p></div>
+<div class="links-grid">
+<a class="official" href="https://www.youtube.com/@IVEstarship" target="_blank" rel="noopener"><strong>YouTube</strong><span>官方 MV、舞台与内容</span></a>
+<a class="official" href="https://www.instagram.com/IVEstarship/" target="_blank" rel="noopener"><strong>Instagram</strong><span>官方照片与动态</span></a>
+<a class="official" href="https://x.com/IVEstarship" target="_blank" rel="noopener"><strong>X / Twitter</strong><span>公告与即时资讯</span></a>
+<a class="official" href="https://ive-official.jp/" target="_blank" rel="noopener"><strong>日本官方网站</strong><span>日文公告、成员资料</span></a>
+</div></div></section>
+</main>
+<footer><div class="wrap footerin"><div><strong style="color:#fff;letter-spacing:.15em">IVE ✦ DIVE INTO IVE</strong><br>非官方粉丝整理页面 · 中文介绍与入门导航</div><div>成员资料参考：<a href="https://ive-official.jp/mob/pageShw.php?aff=ROBO004&cd=profile&ima=4930&site=DIVE" target="_blank" rel="noopener">IVE Japan Official Profile</a><br>本页面不代表 STARSHIP Entertainment 或 IVE 官方。</div></div></footer>
+</body></html>
